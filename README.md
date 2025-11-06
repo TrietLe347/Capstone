@@ -1,12 +1,12 @@
-``` markdown
-# 🧍 Pose → Unity Bridge
+#🧍 Pose → Unity Bridge
 
+``` markdown
 This project streams **real-time human pose keypoints** from a webcam (via **MediaPipe BlazePose** in Python 3.10.14) directly into **Unity** over **WebSockets**.  
 It’s a lightweight bridge between computer-vision tracking and 3D visualization.
 ``` 
 ---
-``` yaml
 ## 🏗️ Architecture
+``` yaml
 Webcam → MediaPipe (BlazePose, Python) → WebSocket Server → Unity Client → 3D Spheres / Avatar
 
 - **`python-server/`** → Runs BlazePose, smooths keypoints, and broadcasts JSON frames.  
@@ -36,12 +36,12 @@ pose-unity-bridge/
 └── README.md ← this file
 
 ``` 
-``` yaml
 ---
 
 ## 🧠 Requirements
 
 ### 🐍 Python Environment
+``` yaml
 - **Python 3.10.14 (64-bit)** — verified working  
   > ⚠️ MediaPipe doesn’t yet support Python 3.12+, so keep 3.8 – 3.11.  
   > You can install 3.10.14 alongside other versions without conflict.
@@ -54,12 +54,12 @@ numpy==1.26.4
 websockets==15.0.1
 ``` 
 
-``` bash
 ### 🎮 Unity Environment
+``` bash
 - **Unity 2021 LTS or newer**
 - **API Compatibility Level = .NET 4.x**
 - Tested on **Windows 10/11**
-
+``` 
 ---
 
 ## ⚙️ Setup Instructions
@@ -80,8 +80,10 @@ python server_pose_ws.py
 Server listening on ws://127.0.0.1:8765
 ``` 
 A preview window shows your webcam with the BlazePose skeleton.
-2️⃣ Unity Client (Visualizer)
 
+
+2️⃣ Unity Client (Visualizer)
+``` bash
   1. Open unity-client/ in Unity Hub.
 
   2. Load your main scene (e.g. SampleScene.unity).
@@ -104,10 +106,10 @@ Each frame sent from Python → Unity:
   ]
 }
 Unity parses this JSON and updates sphere transforms accordingly.
-
+``` 
 
 🧰 Future Enhancements
-
+``` 
 Face + hand tracking (MediaPipe Holistic)
 
 Secure WebSocket (wss://) support
@@ -115,16 +117,19 @@ Secure WebSocket (wss://) support
 Real avatar animation instead of spheres
 
 Adjustable smoothing & visibility thresholds from Unity UI
+``` 
+🧑‍💻 Author
 
+``` bash
 Minh Triet Le
 
 Built with 💻 Python 3.10.14 · Unity 2021+ · Windows 11
 
+``` 
 
 🪪 License
 
+``` bash
 MIT License — free to use, modify, and share for personal or educational projects.
 
-📸 Preview (Optional)
-
-Add a GIF or image showing Unity spheres following your body pose.
+``` 
