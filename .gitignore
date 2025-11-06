@@ -1,0 +1,85 @@
+# ---- Global ----
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+*.tmp
+
+# ---- Python (PyCharm) ----
+# Virtual environments
+venv/
+venv*/
+python-server/venv310/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# IDE settings
+.python-version
+.idea/
+.vscode/
+
+# Logs and temp files
+*.log
+*.bak
+
+# Dependency folders
+python-server/.mypy_cache/
+python-server/.pytest_cache/
+python-server/.tox/
+
+# ---- Unity (Visual Studio) ----
+# Unity generated folders
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+UserSettings/
+MemoryCaptures/
+*.unityproj
+
+# Visual Studio files
+.vs/
+*.user
+*.suo
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+
+# Auto-generated Visual Studio project files
+UnityClient/Assembly-CSharp.csproj
+UnityClient/Assembly-CSharp-Editor.csproj
+UnityClient/*.sln
+UnityClient/*.user
+UnityClient/*.userprefs
+
+# Crash reports
+sysinfo.txt
+
+# ---- Other ----
+# Ignore package manager data
+Packages/com.unity.package-manager
+*.unitypackage
+
+# Backup and temporary Unity files
+*.tmp
+*.bak
+*.old
+*.orig
+
+# Build output
+[Bb]uild/
+[Bb]uilds/
+[Bb]in/
+[Dd]ebug*/
+[Rr]elease*/
+
+# ---- Optional ----
+# You might want to keep your requirements.txt tracked
+# If not, uncomment below
+# python-server/requirements.txt
