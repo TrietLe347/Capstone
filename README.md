@@ -15,7 +15,7 @@ Webcam → MediaPipe (BlazePose, Python) → WebSocket Server → Unity Client �
 ---
 
 ## 🧩 Folder Structure
-
+``` markdown
 pose-unity-bridge/
 │
 ├── python-server/
@@ -34,6 +34,8 @@ pose-unity-bridge/
 │
 ├── .gitignore
 └── README.md ← this file
+
+``` 
 ``` yaml
 ---
 
